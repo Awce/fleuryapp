@@ -7,7 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import Helmet from "react-helmet"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -25,6 +26,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Fleury</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nerko+One&family=Roboto:wght@700&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -34,12 +49,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <footer
+          style={{
+            marginTop: `2rem`,
+          }}
+        >
+          © {new Date().getFullYear()}
+          <Link to="/">Fleury</Link>
         </footer>
       </div>
     </>
