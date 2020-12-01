@@ -1,15 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Slider from "../components/slider"
+import Sections from "../components/sections"
+import Features from "../components/features"
 
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Fleury - Florería by Camberos" />
-    <h1>Fleury Floreria</h1>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Slider />
+    <Sections />
+    <Features />
   </Layout>
 )
 

@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Fleury, tienda en línea`,
+    description: `Tienda en línea`,
+    author: `@Awce2`,
   },
   plugins: [
+    //`gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,9 +25,8 @@ module.exports = {
         background_color: `#2F907C`,
         theme_color: `#2F907C`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/icon@4x.png`,
       },
     },
-    `gatsby-plugin-emotion`,
   ],
 }
