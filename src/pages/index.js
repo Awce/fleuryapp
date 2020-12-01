@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Slider from "../components/slider"
 import Sections from "../components/sections"
 import Features from "../components/features"
+import Newslatter from "../components/newslatter"
 
 import SEO from "../components/seo"
 
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <Slider />
     <Sections />
     <Features />
+    <Newslatter />
   </Layout>
 )
 
