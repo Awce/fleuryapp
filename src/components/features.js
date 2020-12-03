@@ -17,30 +17,33 @@ function componentName() {
           <hr />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4 align-middle">
-        <div className="grid">
-          <div className="h-24 w-24">
-            <ImagePay />
+      <div>
+        <div className="grid grid-cols-3 gap-4 align-middle pt-4">
+          <div className="flex-auto ">
+            <div className="h-24 w-24">
+              <ImagePay />
+            </div>
+            <div>
+              <p>DIVERSAS FORMAS DE PAGO</p>
+            </div>
           </div>
-          <div>
-            <p>DIVERSAS FORMAS DE PAGO</p>
-          </div>
-        </div>
 
-        <div className="grid">
-          <div className="h-24 w-36">
-            <ImageDelivery />
+          <div className="grid">
+            <div className="h-24 w-36">
+              <ImageDelivery />
+            </div>
+            <div>
+              <p>ENTREGAS PUNTUALES</p>
+            </div>
           </div>
-          <div>
-            <p>ENTREGAS PUNTUALES</p>
-          </div>
-        </div>
-        <div className="grid">
-          <div className="h-24 w-24">
-            <ImageVerify />
-          </div>
-          <div>
-            <p>CONFIRMACION DE ENTREGAS</p>
+          <div className="grid">
+            <div className="h-24 w-24">
+              {" "}
+              <ImageVerify />
+            </div>
+            <div>
+              <p>CONFIRMACION DE ENTREGAS</p>
+            </div>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nerko+One&family=Roboto:wght@700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
           rel="stylesheet"
         />
       </Helmet>
