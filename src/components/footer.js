@@ -18,14 +18,28 @@ function Footer() {
         <div>
           <h1>Contactanos</h1>
           <hr />
+          <div>
+            <p>CDMX</p>
+          </div>
         </div>
         <div>
           <h1>Servicios</h1>
           <hr />
+          <div>
+            <p>Formas de pago</p>
+            <p>Costos de envio</p>
+            <p>Condiciones de entrega</p>
+          </div>
         </div>
         <div>
           <h1>Información</h1>
           <hr />
+          <div>
+            <p>Aviso de privacidad</p>
+            <p>Terminos y condiciones</p>
+            <p>Preguntas frecuentes</p>
+            <p>Mi pediddo</p>
+          </div>
         </div>
         <div>9</div>
       </div>

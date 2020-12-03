@@ -20,15 +20,18 @@ function Sections() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 align-middle">
+      <div className="grid grid-cols-3 gap-4 align-middle uppercase">
         <div>
           <ImageFlowers />
+          <p>Flores</p>
         </div>
         <div>
           <ImageOccacions />
+          <p>Ocaciones</p>
         </div>
         <div>
           <ImageFloral />
+          <p>Arreglos</p>
         </div>
       </div>
     </div>

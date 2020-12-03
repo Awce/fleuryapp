@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageVerify = () => {
+const ImagePay = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "confirmacion.png" }) {
@@ -22,4 +22,4 @@ const ImageVerify = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default ImageVerify
+export default ImagePay
