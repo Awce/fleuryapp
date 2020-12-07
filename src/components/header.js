@@ -6,10 +6,8 @@ import Navbar from "./navbar"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div>
-      <SocialNav />
-      <Navbar />
-    </div>
+    <SocialNav />
+    <Navbar />
   </header>
 )
 

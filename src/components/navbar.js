@@ -2,51 +2,25 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Image from "./image"
+import Menu from "./menu"
+import CartNav from "./cart"
 
-function Navbar() {
-  return (
-    <div className="flex space-x-4 w-full h-24 md:h-full items-center text-lg text-center text-green-600 uppercase">
-      <div className="flex-1">
-        <Link to="/nosotros">Nosotros</Link>
-      </div>
-      <div className="flex-1">
-        <Link to="/tienda">Tienda</Link>
-      </div>
-      <div className="flex-1">
-        <Link to="/categorias">Categorías</Link>
-      </div>
-      <div className="flex-1">
+const Navbar = () => (
+  <div className="grid-cols-3 md:grid-cols-6 gap-4 auto-cols-auto w-full h-full py-3">
+    <ul className="flex items-center justify-around max-w-6xl mx-auto">
+      <div className="px-6 flex-1" style={{ maxWidth: `150px` }}>
         <Link to="/">
-          <Image className="transform scale-75" />
+          <Image />
         </Link>
       </div>
-      <div className="flex-1">
-        <Link to="/promociones">Promociones</Link>
+      <div className="px-6 flex-1">
+        <Menu />
       </div>
-      <div className="flex-1">
-        <Link to="/pagos">Formas de pago</Link>
+      <div className="px-6 flex-1">
+        <CartNav />
       </div>
-      <div className="flex-1">
-        <Link to="/carrito">
-          <svg
-            t="1606794913024"
-            className="icon fill-current text-gray-600"
-            viewBox="0 0 1156 1024"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            p-id="8037"
-            width="40"
-            height="40"
-          >
-            <path
-              d="M512.153659 886.650871a39.392676 39.392676 0 0 0 39.392676-39.655294v-185.933429a39.392676 39.392676 0 1 0-78.785352 0v185.933429a39.392676 39.392676 0 0 0 39.392676 39.655294z m131.308919 0a39.392676 39.392676 0 0 0 39.392676-39.655294v-185.933429a39.392676 39.392676 0 1 0-78.785352 0v185.933429a39.392676 39.392676 0 0 0 39.392676 39.655294z m131.308919 0a39.392676 39.392676 0 0 0 39.392676-39.655294v-185.933429a39.392676 39.392676 0 1 0-78.785351 0v185.933429a39.392676 39.392676 0 0 0 39.392675 39.655294z m-393.926757 0a39.392676 39.392676 0 0 0 39.392676-39.655294v-185.933429a39.392676 39.392676 0 1 0-78.785352 0v185.933429a39.392676 39.392676 0 0 0 39.392676 39.655294zM1076.782011 263.458741h-49.897389a9.533028 9.533028 0 0 1-1.076733-1.575707L765.632396 11.608234a39.182581 39.182581 0 0 0-55.701243 0 40.285576 40.285576 0 0 0 0 56.462835l206.076218 195.387672H239.582605l206.076217-195.387672a40.285576 40.285576 0 0 0 0-56.462835 39.182581 39.182581 0 0 0-55.701243 0L129.782087 261.883034a9.533028 9.533028 0 0 1-1.076734 1.575707H78.834226a80.466106 80.466106 0 0 0-78.785351 83.249854v100.582632a79.074231 79.074231 0 0 0 78.785351 79.573205h0.262618C98.635611 630.861096 157.593316 959.65863 157.593316 959.65863a79.021708 79.021708 0 0 0 77.682356 64.34137h685.064893a79.021708 79.021708 0 0 0 77.682357-64.34137s58.931443-306.212399 78.496471-432.794198H1076.782011a79.074231 79.074231 0 0 0 78.785352-79.573205v-100.582632a80.466106 80.466106 0 0 0-78.785352-83.249854z m-156.441446 681.755908H235.275672L157.619577 525.026107h840.377083zM1076.782011 447.291227H78.834226v-106.097606h997.947785v106.097606z"
-              p-id="8038"
-            ></path>
-          </svg>
-        </Link>
-      </div>
-    </div>
-  )
-}
+    </ul>
+  </div>
+)
 
 export default Navbar

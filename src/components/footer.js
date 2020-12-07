@@ -16,7 +16,7 @@ function Footer() {
       <div class="grid grid-cols-4 gap-4 py-2 ">
         <div>
           <h1>Contactanos</h1>
-          <hr />
+          <hr className="w-24" />
           <div>
             <h3>CDMX</h3>
             <div className="flex flex-row">
@@ -82,7 +82,7 @@ function Footer() {
         </div>
         <div>
           <h1>Servicios</h1>
-          <hr />
+          <hr className="w-24" />
           <div>
             <p>Formas de pago</p>
             <p>Costos de envio</p>
@@ -91,7 +91,7 @@ function Footer() {
         </div>
         <div>
           <h1>Información</h1>
-          <hr />
+          <hr className="w-24" />
           <div>
             <p>Aviso de privacidad</p>
             <p>Terminos y condiciones</p>

@@ -1,15 +1,17 @@
 import React from "react"
-import Image1 from "./image1"
+import Slide from "./slide"
 
 function Slider() {
   return (
-    <div className=" my-4 swiper-container">
-      <div classname="container">
-        <div>
-          <Image1 />
+    <section>
+      <div className="my-4 swiper-container">
+        <div classname=" headin-container absolute flex justify-center items-center w-full h-4">
+          <div>
+            <Slide />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -3,11 +3,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutUs = () => (
+const Ocaciones = () => (
   <Layout>
-    <SEO title="Nosotros" />
-    <h1>Nosotros</h1>
+    <SEO title="Ocaciones" />
+    <h1>Para todo tipo de ocacion</h1>
   </Layout>
 )
 
-export default AboutUs
+export default Ocaciones
