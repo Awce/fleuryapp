@@ -29,20 +29,12 @@ function Newslatter() {
             <h2 className="uppercase">nuestras promociones</h2>
           </div>
           <div>
-            <div className="w-full">
-              <div className="ml-3 inline-flex rounded-md shadow">
-                <input
-                  className="form-input block px-5 py-3"
-                  placeholder="Tu correo electronico"
-                />
-                <a
-                  href="/"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-700 hover:bg-green-500 uppercase"
-                >
-                  Suscribete
-                </a>
-              </div>
-            </div>
+            <form>
+              <input class="border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" />
+              <button class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
+                Suscribete
+              </button>
+            </form>
           </div>
         </div>
       </div>

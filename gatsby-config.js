@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Fleury, tienda en línea`,
@@ -5,6 +9,7 @@ module.exports = {
     author: `@Awce2`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,6 +30,14 @@ module.exports = {
         theme_color: `#2F907C`,
         display: `minimal-ui`,
         icon: `src/images/icon.svg`,
+      },
+    },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Balance", "BalanceTransaction", "Product", "Sku"],
+        secretKey: "stripe_secret_key_here",
+        downloadFiles: true,
       },
     },
   ],

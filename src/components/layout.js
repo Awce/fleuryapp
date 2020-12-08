@@ -21,10 +21,7 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <title>Fleury</title>
-        <link
-          href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-          rel="stylesheet"
-        />
+        <meta name="descripcion" content="Tienda en linea"></meta>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"

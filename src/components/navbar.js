@@ -6,7 +6,7 @@ import Menu from "./menu"
 import CartNav from "./cart"
 
 const Navbar = () => (
-  <div className="grid-cols-3 md:grid-cols-6 gap-4 auto-cols-auto w-full h-full py-3">
+  <nav className="grid-cols-3 md:grid-cols-6 gap-4 auto-cols-auto w-full h-full py-3">
     <ul className="flex items-center justify-around max-w-6xl mx-auto">
       <div className="px-6 flex-1" style={{ maxWidth: `150px` }}>
         <Link to="/">
@@ -20,7 +20,7 @@ const Navbar = () => (
         <CartNav />
       </div>
     </ul>
-  </div>
+  </nav>
 )
 
 export default Navbar

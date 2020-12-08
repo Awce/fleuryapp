@@ -34,7 +34,7 @@ function componentName() {
                   p-id="3337"
                 ></path>
               </svg>
-              <p>DIVERSAS FORMAS DE PAGO</p>
+              DIVERSAS FORMAS DE PAGO
             </div>
           </div>
 
@@ -59,7 +59,7 @@ function componentName() {
                   p-id="4367"
                 ></path>
               </svg>
-              <p>ENTREGAS PUNTUALES</p>
+              ENTREGAS PUNTUALES
             </div>
           </div>
           <div className="m-8 w-64 mx-auto">
@@ -83,7 +83,7 @@ function componentName() {
                   p-id="5349"
                 ></path>
               </svg>
-              <p>CONFIRMACION DE ENTREGAS</p>
+              CONFIRMACION DE ENTREGAS
             </div>
           </div>
         </div>
