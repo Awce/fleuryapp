@@ -5,7 +5,6 @@ module.exports = {
     author: `@Awce2`,
   },
   plugins: [
-    //`gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,7 +24,7 @@ module.exports = {
         background_color: `#2F907C`,
         theme_color: `#2F907C`,
         display: `minimal-ui`,
-        icon: `src/images/icon@4x.png`,
+        icon: `src/images/icon.svg`,
       },
     },
   ],
