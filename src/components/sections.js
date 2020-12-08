@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import ImageFlowers from "./imageflowers"
 import ImageOccacions from "./imageoccacions"
 import ImageFloral from "./imagefloral"
@@ -22,16 +24,23 @@ function Sections() {
 
       <div className="grid grid-cols-3 gap-4 align-middle items-center uppercase">
         <div className="m-8">
-          <ImageFlowers />
-          <p>Flores</p>
+          <Link to="/flores">
+            <ImageFlowers />
+            <p>Flores</p>
+          </Link>
+        </div>
+
+        <div className="m-8">
+          <Link to="/ocaciones">
+            <ImageOccacions />
+            <p>Ocaciones</p>
+          </Link>
         </div>
         <div className="m-8">
-          <ImageOccacions />
-          <p>Ocaciones</p>
-        </div>
-        <div className="m-8">
-          <ImageFloral />
-          <p>Arreglos</p>
+          <Link to="/arreglos">
+            <ImageFloral />
+            <p>Arreglos</p>
+          </Link>
         </div>
       </div>
     </div>

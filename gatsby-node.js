@@ -5,3 +5,10 @@
  */
 
 // You can delete this file if you're not using it
+exports.sourceNodes = ({ actions }) => {
+  actions.createTypes(`
+        type stripePrice implements Node {
+            slug: String!
+        }
+    `)
+}

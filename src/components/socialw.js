@@ -2,7 +2,7 @@ import React from "react"
 
 function SocialFooter() {
   return (
-    <div className="flex flex-col-reverse justify-center">
+    <div className="flex flex-col-reverse justify-center p-4">
       <div>
         <svg
           t="1606794776636"

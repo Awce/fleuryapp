@@ -30,8 +30,11 @@ function Newslatter() {
           </div>
           <div>
             <form>
-              <input class="border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" />
-              <button class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
+              <input
+                class="border py-2 px-4 border-transparent focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                placeholder="Introduce tu correo"
+              />
+              <button class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700">
                 Suscribete
               </button>
             </form>
